@@ -15,8 +15,8 @@ const ModalView = (props) => {
     const isPauseSubscription = title.includes(t('pause'))
     const handleDateRange = (value) => {
         let val = [
-            moment(value[0]?.startDate).format('yyyy/MM/DD HH:mm'),
-            moment(value[0]?.endDate).format('yyyy/MM/DD HH:mm'),
+            moment(value[0]?.startDate).format('yyyy-MM-DD HH:mm'),
+            moment(value[0]?.endDate).format('yyyy-MM-DD HH:mm'),
         ]
         setDateRange(val)
     }

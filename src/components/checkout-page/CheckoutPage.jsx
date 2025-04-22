@@ -82,8 +82,8 @@ import { setIsNeedLoad } from '@/redux/slices/utils'
 import GuestUserInforForm from '@/components/checkout-page/guest-user/GuestUserInforForm'
 import DineInPreferableTime from '@/components/checkout-page/DineInPreferableTime'
 
-let currentDate = moment().format('YYYY/MM/DD HH:mm')
-let nextday = moment(currentDate).add(1, 'days').format('YYYY/MM/DD')
+let currentDate = moment().format('YYYY-MM-DD HH:mm')
+let nextday = moment(currentDate).add(1, 'days').format('YYYY-MM-DD')
 
 let today = moment(currentDate).format('dddd')
 let tomorrow = moment(nextday).format('dddd')

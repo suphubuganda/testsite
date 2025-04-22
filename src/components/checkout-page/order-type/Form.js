@@ -18,13 +18,13 @@ const Form = props => {
     }
     const handleDateRange = (value) => {
         if (value) {
-            const isSame = moment(value[0]?.startDate, 'yyyy/MM/DD HH:mm').isSame(moment(value[0]?.endDate, 'yyyy/MM/DD HH:mm'))
+            const isSame = moment(value[0]?.startDate, 'yyyy-MM-DD HH:mm').isSame(moment(value[0]?.endDate, 'yyyy-MM-DD HH:mm'))
             if (isSame) {
                 toast.error(t('Start date and end date can not be same for subscription orders.'))
             }
             else {
-                subscriptionDispatch({ type: ACTIONS.setStartDate, payload: moment(value[0]?.startDate).format('yyyy/MM/DD HH:mm') })
-                subscriptionDispatch({ type: ACTIONS.setEndDate, payload: moment(value[0]?.endDate).format('yyyy/MM/DD HH:mm') })
+                subscriptionDispatch({ type: ACTIONS.setStartDate, payload: moment(value[0]?.startDate).format('yyyy-MM-DD HH:mm') })
+                subscriptionDispatch({ type: ACTIONS.setEndDate, payload: moment(value[0]?.endDate).format('yyyy-MM-DD HH:mm') })
             }
         }
 
