@@ -11,7 +11,7 @@ export const english = {
     'Welcome to React and react-i18next': 'Welcome to React and react-i18next',
     'Or Login with': 'Or Login with',
     'Dont have a cutlery? Restaurant will provide you.':
-        'Dont have a cutlery? Restaurant will provide you.',
+        'Dont have a bag? Shop will provide you.',
     'Minimum Order': 'Minimum Order',
     'Choose Product from  your Favourite Shop':
         'Choose Product from  your Favourite Shop',
@@ -278,7 +278,7 @@ export const english = {
     'Best Reviewed Foods': 'Best Reviewed Foods',
     'View all': 'View all',
     'New On StackFood': 'New On StackFood',
-    'Popular Restaurant': 'Popular Restaurant',
+    'Popular Restaurant': 'Popular Products',
     'Popular Food Nearby': 'Popular Food Nearby',
     Nearby: 'Nearby',
     'Best Resturants': 'Best Resturants',
@@ -320,12 +320,12 @@ export const english = {
     'Min purchase': 'Min purchase',
     'Only for': 'Only for',
     'Only for some specific zones': 'Only for some specific zones',
-    Restaurant: 'Restaurant',
+    Restaurant: 'Shop',
     Max: 'Max',
     'Code copied!': 'Code copied!',
     'Active Order': 'Active Order',
     'Past Order': 'Past Order',
-    'Resturant Informations': 'Resturant Informations',
+    'Resturant Informations': 'Shop Informations',
     'Payment Status': 'Payment Status',
     'Order Status': 'Order Status',
     Amount: 'Amount',
@@ -392,8 +392,8 @@ export const english = {
     Zone: 'Zone',
     'Identity Type': 'Identity Type',
     'VAT/TEX': 'VAT/TEX',
-    'Restaurant Address': 'Restaurant Address',
-    'Restaurant Name': 'Restaurant Name',
+    'Restaurant Address': 'Shop Address',
+    'Restaurant Name': 'Shop Name',
     'restaurant address required': 'restaurant address required',
     'restaurant name required': 'restaurant name required',
     'Minimum Delivery Time': 'Minimum Delivery Time',
@@ -483,7 +483,7 @@ export const english = {
     'EMAIL US': 'EMAIL US',
     'CALL US': 'CALL US',
     'write something': 'write something',
-    'Restaurant Registration': 'Restaurant Registration',
+    'Restaurant Registration': 'Shop Registration',
     'Logo is required': 'Logo is required',
     'Cover photo is required': 'Cover photo is required',
     'Please search a location first.': 'Please search a location first.',
@@ -494,7 +494,7 @@ export const english = {
     Popular: 'Popular',
     debit: 'debit',
     credit: 'credit',
-    'No Favourite Restaurant Found': 'No Favourite Restaurant Found',
+    'No Favourite Restaurant Found': 'No Favourite Shop Found',
     'No Favourite Food Found': 'No Favourite Food Found',
     'Delivery man': 'Delivery man',
     'Trip Route': 'Trip Route',
@@ -504,7 +504,7 @@ export const english = {
     'Enter phone number': 'Enter phone number',
     'Free Delivery': 'Free Delivery',
     'Open Your Own Virtual Restaurant On':
-        'Open Your Own Virtual Restaurant On',
+        'Open Your Own Virtual Shop On',
     'Join as delivery man on': 'Join as delivery man on',
     'Lets Connect !': 'Lets Connect !',
     'Stay upto date with Shop and foods around you':
@@ -527,7 +527,7 @@ export const english = {
     'Your Address': 'Your Address',
     'Loyalty Points': 'Loyalty Points',
     'Order placed ': 'Order placed ',
-    "Restaurant Information's": "Restaurant Information's",
+    "Restaurant Information's": "Shop Information's",
     'Items Price': 'Items Price',
     'Addons Price': 'Addons Price',
     'Coupon Discount': 'Coupon Discount',
@@ -574,7 +574,7 @@ export const english = {
         'Amin also reward their top customers with wallet money',
     'Minimum 200 points required to convert into currency':
         'Minimum 200 points required to convert into currency',
-    'Only for  Restaurant': 'Only for  Restaurant',
+    'Only for  Restaurant': 'Only for  Shop',
     'Convert your loyalty points into wallet money':
         'Convert your loyalty points into wallet money',
     'Total Balance': 'Total Balance',
@@ -629,7 +629,7 @@ export const english = {
     'Enter Your Coupon..': 'Enter Your Coupon..',
     'Order Summary': 'Order Summary',
     Total: 'Total',
-    'Restaurant Informations': 'Restaurant Informations',
+    'Restaurant Informations': 'Shop Information',
     'Give a review': 'Give a review',
     'Cancel Order': 'Cancel Order',
     'Order Confirmed': 'Order Confirmed',
@@ -809,8 +809,8 @@ export const english = {
     'something went wrong.': 'something went wrong.',
     'No Address Found!': 'No Address Found!',
     'Please wait sometimes': 'Please wait sometimes',
-    'No Cuisine Restaurant Found': 'No Cuisine Restaurant Found',
-    'Cuisine Restaurant': 'Cuisine Restaurant',
+    'No Cuisine Restaurant Found': 'No Service Shop Found',
+    'Cuisine Restaurant': 'Cuisine Shop',
     Cuisines: 'Cuisines',
     RecommendProduct: 'RecommendProduct',
     'Cancel Reason': 'Cancel Reason',
@@ -892,7 +892,7 @@ export const english = {
     'Start date and end date can not be same for subscription orders.':
         'Start date and end date can not be same for subscription orders.',
     'Recommended Food': 'Recommended Food',
-    'Your Shop': 'Your Restaurants',
+    'Your Restaurants': 'Your Shop',
     'You have some foods in your cart. If you change your location, your cart and other data related to with your carrunt delivery location will be reset.':
         'You have some foods in your cart. If you change your location, your cart and other data related to with your carrunt delivery location will be reset.',
     'Custom Date': 'Custom Date',
@@ -923,7 +923,7 @@ export const english = {
     "Offline Payment! Now, with just a click of a button, you can make secure transactions. It's simple, convenient, and reliable.":
         "Offline Payment! Now, with just a click of a button, you can make secure transactions. It's simple, convenient, and reliable.",
     'What’s on Your Mind?': 'What’s on Your Mind?',
-    'Find Best Restaurants and Foods': 'Find Best Restaurants and Foods',
+    'Find Best Restaurants and Foods': 'Find Best Products',
     Guest: 'Guest',
     'Pay Offline': 'Pay Offline',
     'Select option from below': 'Select option from below',
@@ -1019,7 +1019,7 @@ export const english = {
     'Search restaurants....': 'Search restaurants....',
     'Select your location': 'Select your location',
     'Your Order is Pending, Please Wait for Restaurant Confirmation':
-        'Your Order is Pending, Please Wait for Restaurant Confirmation',
+        'Your Order is Pending, Please Wait for Shop Confirmation',
     'insufficient amount': 'insufficient amount',
     'Please exchange more than ': 'Please exchange more than ',
     ' points': ' points',
@@ -1050,7 +1050,7 @@ export const english = {
         'Do you want to login or continue as a guest?',
     "If you log in, your order history will be saved. However, if you continue as a guest, you won't be able to see your order history after completing your order.":
         "If you log in, your order history will be saved. However, if you continue as a guest, you won't be able to see your order history after completing your order.",
-    'Open Restaurant': 'Open Restaurant',
+    'Open Restaurant': '',
     'After completing the order, you will receive a':
         'After completing the order, you will receive a',
     'cashback. The minimum purchase required to avail this offer is':
@@ -1063,7 +1063,7 @@ export const english = {
     'Want to Dine in?': 'Want to Dine in?',
     'Todays Trends': 'Todays Trends',
     'New on': 'New on',
-    'View Restaurants': 'View Restaurants',
+    'View Restaurants': 'View Products',
     'Dine In': 'Dine In',
     'See our most popular restaurant and foods':
         'See our most popular restaurant and foods',
