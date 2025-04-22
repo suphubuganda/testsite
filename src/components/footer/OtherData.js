@@ -9,19 +9,19 @@ export const OtherData = [
         value: 'term-&-Conditions',
         link: '/terms-and-conditions',
     },
-    // {
-    //     name: 'Refund Policy',
-    //     value: 'refund-policy',
-    //     link: '/refund-policy',
-    // },
-    // {
-    //     name: 'Cancellation Policy',
-    //     value: 'cancellation-policy',
-    //     link: '/cancellation-policy',
-    // },
-    // {
-    //     name: 'Shipping Policy',
-    //     value: 'shipping-policy',
-    //     link: '/shipping-policy',
-    // },
+    {
+        name: 'Refund Policy',
+        value: 'refund-policy',
+        link: '/refund-policy',
+    },
+    {
+        name: 'Cancellation Policy',
+        value: 'cancellation-policy',
+        link: '/cancellation-policy',
+    },
+    {
+        name: 'Shipping Policy',
+        value: 'shipping-policy',
+        link: '/shipping-policy',
+    },
 ]
