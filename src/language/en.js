@@ -373,7 +373,7 @@ export const english = {
     'DISCOUNT UPTO 20%': 'DISCOUNT UPTO 20%',
     'for Chinese, Japanese & Asian foods':
         '',
-    Foods: 'Product',
+    Foods: 'Products',
     'Starts From:': 'Starts From:',
     'Download our app from google play store & app store.':
         'Download our app from google play store & app store.',

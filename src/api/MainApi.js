@@ -3,6 +3,7 @@ export const baseUrl = process.env.NEXT_PUBLIC_BASE_URL
 
 const MainApi = axios.create({
     baseURL: baseUrl,
+    maxDuration: 60,
 })
 
 MainApi.interceptors.request.use(function (config) {

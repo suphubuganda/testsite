@@ -67,10 +67,13 @@
         "web-vitals": "^2.1.4",
         "yup": "^0.32.11"
     },
+    "homepage": "https://suphubuganda.github.io/testsite",
     "scripts": {
         "dev": "next dev",
         "build": "next build",
-        "start": "NODE_ENV=production node server.js"
+        "start": "NODE_ENV=production node server.js",
+        "predeploy": "yarn build",
+        "deploy": "gh-pages -d build"
     },
     "browserslist": {
         "production": [
@@ -86,6 +89,7 @@
     },
     "devDependencies": {
         "eslint": "^9.25.1",
+        "gh-pages": "^6.3.0",
         "prettier": "2.5.1"
     }
 }
