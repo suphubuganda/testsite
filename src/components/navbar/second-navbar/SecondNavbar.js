@@ -321,10 +321,10 @@ const SecondNavbar = ({ isSticky, cartListRefetch }) => {
                                         >
                                             <ThemeSwitches />
                                         </Stack>
-                                        <CustomLanguage
-                                            countryCode={countryCode}
-                                            language={language}
-                                        />
+                                        {/*<CustomLanguage*/}
+                                        {/*    countryCode={countryCode}*/}
+                                        {/*    language={language}*/}
+                                        {/*/>*/}
                                     </Stack>
                                 )}
                                 <Box
@@ -337,12 +337,12 @@ const SecondNavbar = ({ isSticky, cartListRefetch }) => {
                                 >
                                     {handleAuthBasedOnRoute()}
                                 </Box>
-                                {!isSmall && location && (
-                                    <CustomLanguage
-                                        countryCode={countryCode}
-                                        language={language}
-                                    />
-                                )}
+                                {/*{!isSmall && location && (*/}
+                                {/*    <CustomLanguage*/}
+                                {/*        countryCode={countryCode}*/}
+                                {/*        language={language}*/}
+                                {/*    />*/}
+                                {/*)}*/}
                             </Stack>
                         </CustomStackFullWidth>
                     </Toolbar>

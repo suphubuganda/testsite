@@ -1,14 +1,14 @@
 export const QuickLinkData1 = [
-    {
-        name: 'New Products',
-        value: 'latest',
-        link: '/restaurant/latest',
-    },
-    {
-        name: 'Popular Products',
-        value: 'popular',
-        link: '/restaurant/popular',
-    },
+    // {
+    //     name: 'New Restaurants',
+    //     value: 'latest',
+    //     link: '/restaurant/latest',
+    // },
+    // {
+    //     name: 'Popular Restaurants',
+    //     value: 'popular',
+    //     link: '/restaurant/popular',
+    // },
     {
         name: 'Best Reviewed Products',
         value: 'most-reviewed',

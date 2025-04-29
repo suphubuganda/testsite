@@ -73,7 +73,7 @@ export default function FoodOrRestaurant({
                             cursor: 'pointer',
                         }}
                     >
-                        {t('Foods')}
+                        {t('Products')}
                         <Typography
                             sx={{
                                 borderBottom: isProduct
@@ -101,16 +101,16 @@ export default function FoodOrRestaurant({
                                     cursor: 'pointer',
                                 }}
                             >
-                                {t('Restaurants')}
-                                <Typography
-                                    sx={{
-                                        borderBottom: isRestaurant
-                                            ? `5px solid ${theme.palette.primary.main}`
-                                            : '',
-                                        borderRadius: '20px',
-                                        marginTop: '4px',
-                                    }}
-                                />
+                                {/*{t('Restaurants')}*/}
+                                {/*<Typography*/}
+                                {/*    sx={{*/}
+                                {/*        borderBottom: isRestaurant*/}
+                                {/*            ? `5px solid ${theme.palette.primary.main}`*/}
+                                {/*            : '',*/}
+                                {/*        borderRadius: '20px',*/}
+                                {/*        marginTop: '4px',*/}
+                                {/*    }}*/}
+                                {/*/>*/}
                             </Typography>
                         )}
                 </Stack>

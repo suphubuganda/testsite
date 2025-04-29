@@ -25,10 +25,10 @@ export default function Custom400() {
                             loading="auto"
                             src={FourHundred?.src}
                         />
-                        <CustomAlert
-                            text="Please buy this system and use activated domain."
-                            type="info"
-                        />
+                        {/*<CustomAlert*/}
+                        {/*    text="Please buy this system and use activated domain."*/}
+                        {/*    type="info"*/}
+                        {/*/>*/}
                     </Stack>
                 </CustomStackFullWidth>
             </CustomContainer>

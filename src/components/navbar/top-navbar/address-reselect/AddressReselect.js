@@ -123,7 +123,9 @@ const AddressReselect = ({ location }) => {
                         style={{ width: '16px', height: '16px' }}
                     />
                     <AddressTypographyGray align="left">
-                        {t('Select your location')}
+                        {t(
+                            'No C, 24, Prime Complex, Shop, Johnston Street, Kampala'
+                        )}
                     </AddressTypographyGray>
                     <KeyboardArrowDownIcon />
                 </Stack>

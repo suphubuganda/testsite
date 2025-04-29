@@ -16,6 +16,9 @@ import DiscountBanner from './DiscountBanner'
 import { setGlobalSettings } from '@/redux/slices/global'
 import AvailableZoneSection from '@/components/landingpage/AvailableZoneSection'
 
+import CategoryList from '../../components/landingpage/categories/CategoryList'
+import Container from '@mui/material/Container'
+
 const LandingPage = ({ global }) => {
     const dispatch = useDispatch()
     const { landingPageData } = useSelector((state) => state.storedData)
@@ -51,6 +54,9 @@ const LandingPage = ({ global }) => {
                 }
                 isLoading={isLoading}
             />
+            <Container>
+                <CategoryList />
+            </Container>
             <FunFactSection
                 global={global}
                 react_feature={landingPageData?.react_services}

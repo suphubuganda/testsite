@@ -311,14 +311,14 @@ const Homes = ({ configData }) => {
                     </Stack>
                 </CustomStackFullWidth>
             </CustomContainer>
-            <SearchFilterTag
-                sort_by={sort_by}
-                setSort_by={setSort_by}
-                tags={tags}
-                query={query}
-                page={page}
-                restaurantType={restaurantType}
-            />
+            {/*<SearchFilterTag*/}
+            {/*    sort_by={sort_by}*/}
+            {/*    setSort_by={setSort_by}*/}
+            {/*    tags={tags}*/}
+            {/*    query={query}*/}
+            {/*    page={page}*/}
+            {/*    restaurantType={restaurantType}*/}
+            {/*/>*/}
             {query || page || restaurantType || tags ? (
                 <CustomContainer>
                     <ProductSearchPage
@@ -362,7 +362,7 @@ const Homes = ({ configData }) => {
                             <PromotionalBanner global={global} />
                         )}
 
-                        <Restaurant />
+                        {/*<Restaurant />*/}
                     </CustomContainer>
                 </>
             )}
