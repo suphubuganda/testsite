@@ -29,6 +29,10 @@ import AddressReselect from '../top-navbar/address-reselect/AddressReselect'
 import LogoSide from './LogoSide'
 import NavLinks from './NavLinks'
 import Wishlist from './Wishlist'
+import { useQuery } from 'react-query'
+import { GoogleApi } from '@/hooks/react-query/config/googleApi'
+import { onErrorResponse } from '@/components/ErrorResponse'
+import { setUserLocationUpdate, setZoneData } from '@/redux/slices/global'
 
 export const getSelectedAddons = (addon) => {
     return addon?.filter((item) => {
@@ -114,6 +118,45 @@ const SecondNavbar = ({ isSticky, cartListRefetch }) => {
     let location = undefined
     let languageDirection = undefined
     if (typeof window !== 'undefined') {
+        // Manually setting location and latlng
+        if (!localStorage.getItem('location')) {
+            console.log('Manually set coordinates started...')
+            // Getting the zone
+            let latitude = 0.31513
+            let longitude = 32.576944
+
+            const {
+                isLoading: locationLoading,
+                data: zoneData,
+                isError: isErrorLocation,
+                error: errorLocation,
+                refetch: locationRefetch,
+            } = useQuery(
+                ['zoneId', location],
+                async () =>
+                    GoogleApi.getZoneId({ lat: latitude, lng: longitude }),
+                { enabled: true, onError: onErrorResponse },
+                {
+                    retry: 1,
+                }
+            )
+
+            // Setting the location
+            let location = 'Prime Complex, Kampala, Uganda'
+            localStorage.setItem('location', location)
+            localStorage.setItem(
+                'currentLatLng',
+                JSON.stringify({ lat: latitude, lng: longitude })
+            )
+
+            localStorage.setItem('zoneid', '[2]')
+            localStorage.setItem('direction', 'ltr')
+            const dispatch = useDispatch()
+            // dispatch(setZoneData(zoneData?.data?.zone_data))
+            dispatch(setUserLocationUpdate(!userLocationUpdate))
+            console.log('Manually set coordinates completed successfully...')
+        }
+
         zoneid = localStorage.getItem('zoneid')
         languageDirection = localStorage.getItem('direction')
         location = localStorage.getItem('location')

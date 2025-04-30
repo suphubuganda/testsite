@@ -56,7 +56,7 @@ const CollapsableMenu = ({ value, setOpenDrawer, pathName }) => {
             </ListItemButton>
             <Collapse in={open} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
-                    {getDataLimit(value.items)?.map((item, index) => (
+                    {getDataLimit(value?.items)?.map((item, index) => (
                         <ListItemButton
                             sx={{
                                 borderBottom: '1px solid',

@@ -138,12 +138,12 @@ const DrawerMenu = ({ zoneid, cartListRefetch }) => {
             path: '/category',
         },
         res: {
-            text: 'Restaurants',
+            text: 'Shop',
             items: popularRestuarants?.data?.map((i) => i),
             path: '/restaurant',
         },
         cuisine: {
-            text: 'Cuisines',
+            text: 'Services',
             items: cuisines?.map((i) => i),
             path: '/cuisines',
         },

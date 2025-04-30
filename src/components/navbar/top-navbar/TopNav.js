@@ -6,12 +6,15 @@ import { useTheme } from '@mui/material/styles'
 import useMediaQuery from '@mui/material/useMediaQuery'
 import { useEffect, useState } from 'react'
 import { withTranslation } from 'react-i18next'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import useGetGuest from '../../../hooks/react-query/profile/useGetGuest'
 import DrawerMenu from '../DrawerMenu'
 import LogoSide from '../second-navbar/LogoSide'
 import ThemeSwitches from './ThemeSwitches'
 import AddressReselect from './address-reselect/AddressReselect'
+import { useQuery } from 'react-query'
+import { onErrorResponse } from '@/components/ErrorResponse'
+import { GoogleApi } from '@/hooks/react-query/config/googleApi'
 
 const TopNav = ({ cartListRefetch }) => {
     const theme = useTheme()
@@ -61,6 +64,44 @@ const TopNav = ({ cartListRefetch }) => {
             guestId = guestData.guest_id
         }
     }, [guestData])
+
+    // Manually setting location and latlng
+    if (!localStorage.getItem('location')) {
+        console.log('Manually set coordinates started...')
+        // Getting the zone
+        let latitude = 0.31513
+        let longitude = 32.576944
+
+        const {
+            isLoading: locationLoading,
+            data: zoneData,
+            isError: isErrorLocation,
+            error: errorLocation,
+            refetch: locationRefetch,
+        } = useQuery(
+            ['zoneId', location],
+            async () => GoogleApi.getZoneId({ lat: latitude, lng: longitude }),
+            { enabled: true, onError: onErrorResponse },
+            {
+                retry: 1,
+            }
+        )
+
+        // Setting the location
+        let location = 'Prime Complex, Kampala, Uganda'
+        localStorage.setItem('location', location)
+        localStorage.setItem(
+            'currentLatLng',
+            JSON.stringify({ lat: latitude, lng: longitude })
+        )
+
+        localStorage.setItem('zoneid', '[2]')
+        localStorage.setItem('direction', 'ltr')
+        const dispatch = useDispatch()
+        // dispatch(setZoneData(zoneData?.data?.zone_data))
+        dispatch(setUserLocationUpdate(!userLocationUpdate))
+        console.log('Manually set coordinates completed successfully...')
+    }
 
     return (
         <NoSsr>

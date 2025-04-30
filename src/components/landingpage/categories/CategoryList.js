@@ -6,32 +6,6 @@ import { CategoryApi } from '@/hooks/react-query/config/categoryApi'
 import { onErrorResponse } from '@/components/ErrorResponse'
 import CustomEmptyResult from '@/components/empty-view/CustomEmptyResult'
 
-const projects = [
-    {
-        title: 'MAK RUN 2025',
-        image: '/images/marathon.jpg',
-        description:
-            'Participate in MAK RUN 2025 to promote health, unity, and community spirit...',
-    },
-    {
-        title: 'KCCA Incubation Hub',
-        image: '/images/incubation.jpg',
-        description: 'KCCA Incubation Hub supports startups in Kampala...',
-    },
-    {
-        title: 'CWA Incubation Hub',
-        image: '/images/cwa.jpg',
-        description:
-            'CWA Incubation Hub fosters entrepreneurship by offering support...',
-    },
-    {
-        title: 'Crypto Conference',
-        image: '/images/crypto.jpg',
-        description:
-            'Join the Crypto Management Conference to explore digital asset trends...',
-    },
-]
-
 const CategoryList = () => {
     const { isLoading, data, refetch } = useQuery(
         ['category'],
