@@ -37,7 +37,7 @@ import {
 import { useTheme } from '@mui/material/styles'
 import { t } from 'i18next'
 import { useRouter } from 'next/router'
-import { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useQuery } from 'react-query'
 import { useDispatch, useSelector } from 'react-redux'
 import { onSingleErrorResponse } from '../ErrorResponse'
@@ -63,6 +63,7 @@ import DineIn from '@/components/home/dine-in'
 import NearByRestaurant from '@/components/home/visit-again/NearByRestaurant'
 import CloseIcon from '@mui/icons-material/Close'
 import CustomImageContainer from '@/components/CustomImageContainer'
+import AllCuisines from '@/components/cuisines-page/AllCuisines'
 
 const Homes = ({ configData }) => {
     const theme = useTheme()
@@ -337,13 +338,13 @@ const Homes = ({ configData }) => {
                     <Box>
                         <FeatureCatagories height="70px" />
                         {/* Services Section */}
-                        <Cuisines />
                         <CustomContainer>
-                            {/* <VisitAgain /> */}
-                            {/* <AddsSection
-                                data={addStores}
-                                isLoading={addIsLoading}
-                            /> */}
+                            <AllCuisines />
+                            {/*<VisitAgain />*/}
+                            {/*<AddsSection*/}
+                            {/*    data={addStores}*/}
+                            {/*    isLoading={addIsLoading}*/}
+                            {/*/>*/}
                             {configData?.dine_in_order_option === 1 ? (
                                 <DineIn />
                             ) : null}
