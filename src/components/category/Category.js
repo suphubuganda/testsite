@@ -10,7 +10,6 @@ import { onErrorResponse } from '../ErrorResponse'
 import { t } from 'i18next'
 
 const Category = () => {
-    const matches = useMediaQuery('(max-width:1180px)')
     const [searchKey, setSearchKey] = useState('')
 
     const { isLoading, data, refetch } = useQuery(
@@ -48,11 +47,7 @@ const Category = () => {
                         handleSearchResult={handleSearchResult}
                         label={t('Search categories ...')}
                     />
-                    <CategoryList
-                        data={data}
-                        isLoading={isLoading}
-                        matches={matches}
-                    />
+                    <CategoryList />
                 </Box>
             </CustomContainer>
         </>
