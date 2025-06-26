@@ -119,7 +119,7 @@ const NavCatagory = ({ setRestaurantModal, languageDirection }) => {
                         {featuredCategories?.length > 12 ? (
                             <>
                                 {featuredCategories
-                                    ?.slice(0, 12)
+                                    // ?.slice(0, 12)
                                     ?.map((category, index) => {
                                         return (
                                             <>
@@ -435,7 +435,7 @@ const NavCatagory = ({ setRestaurantModal, languageDirection }) => {
                             </>
                         )}
                     </Grid>
-                    {featuredCategories?.length > 0 && (
+                    {/* {featuredCategories?.length > 0 && (
                         <Grid
                             container
                             md={12}
@@ -462,7 +462,7 @@ const NavCatagory = ({ setRestaurantModal, languageDirection }) => {
                                 {t('View all')}
                             </Button>
                         </Grid>
-                    )}
+                    )} */}
                 </Stack>
             </Popover>
         </div>
