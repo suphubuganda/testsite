@@ -22,7 +22,7 @@ const NavLinks = ({ zoneid, t, languageDirection }) => {
         <Stack direction="row" spacing={2.5}>
             {zoneid && (
                 <>
-                    <NavLinkStyle
+                    {/* <NavLinkStyle
                         onClick={handleClick}
                         underline="none"
                         languageDirection={languageDirection}
@@ -33,7 +33,7 @@ const NavLinks = ({ zoneid, t, languageDirection }) => {
                         }}
                     >
                         <Typography fontSize="14px">{t('Home')}</Typography>
-                    </NavLinkStyle>
+                    </NavLinkStyle> */}
 
                     <NavCatagory
                         openModal={openCategoryModal}
