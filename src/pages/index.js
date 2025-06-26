@@ -1,12 +1,14 @@
 import LandingPage from '../components/landingpage'
 import React, { useEffect } from 'react'
-import PushNotificationLayout from '../components/PushNotificationLayout'
+import Homes from '../components/home/Homes'
 import Meta from '../components/Meta'
+import HomeGuard from '../components/home-guard/HomeGuard'
 import { setGlobalSettings } from '@/redux/slices/global'
 import { useDispatch } from 'react-redux'
 import { useRouter } from 'next/router'
 import { CustomHeader } from '@/api/Headers'
 import { checkMaintenanceMode } from '@/utils/customFunctions'
+import PushNotificationLayout from '@/components/PushNotificationLayout'
 
 const Home = ({ configData, landingPageData }) => {
     const router = useRouter()
@@ -41,9 +43,14 @@ const Home = ({ configData, landingPageData }) => {
                     />
                 )}
             </PushNotificationLayout>
+            <HomeGuard>
+                <Homes configData={configData} />
+            </HomeGuard>
         </>
     )
 }
+
+Home.getLayout = (page) => <HomeGuard>{page}</HomeGuard>
 
 export default Home
 
