@@ -14,7 +14,7 @@ const NavLinks = ({ zoneid, t, languageDirection }) => {
     const [openCategoryModal, setCategoryModal] = useState(false)
     const [openRestaurantModal, setRestaurantModal] = useState(false)
     const handleClick = () => {
-        router.push('/home')
+        router.push('/')
         dispatch(setHandleHomePage(false))
     }
 
@@ -22,7 +22,7 @@ const NavLinks = ({ zoneid, t, languageDirection }) => {
         <Stack direction="row" spacing={2.5}>
             {zoneid && (
                 <>
-                    {/* <NavLinkStyle
+                    <NavLinkStyle
                         onClick={handleClick}
                         underline="none"
                         languageDirection={languageDirection}
@@ -33,7 +33,7 @@ const NavLinks = ({ zoneid, t, languageDirection }) => {
                         }}
                     >
                         <Typography fontSize="14px">{t('Home')}</Typography>
-                    </NavLinkStyle> */}
+                    </NavLinkStyle>
 
                     <NavCatagory
                         openModal={openCategoryModal}
@@ -41,12 +41,12 @@ const NavLinks = ({ zoneid, t, languageDirection }) => {
                         setRestaurantModal={setRestaurantModal}
                         languageDirection={languageDirection}
                     />
-                    {/*<NavCuisines*/}
-                    {/*    openModal={openCategoryModal}*/}
-                    {/*    setModal={setCategoryModal}*/}
-                    {/*    setRestaurantModal={setRestaurantModal}*/}
-                    {/*    languageDirection={languageDirection}*/}
-                    {/*/>*/}
+                    <NavCuisines
+                        openModal={openCategoryModal}
+                        setModal={setCategoryModal}
+                        setRestaurantModal={setRestaurantModal}
+                        languageDirection={languageDirection}
+                    />
 
                     {/*<NavResturant*/}
                     {/*    openModal={openRestaurantModal}*/}
