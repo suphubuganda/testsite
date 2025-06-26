@@ -238,6 +238,7 @@ const Homes = ({ configData }) => {
 
     return (
         <PushNotificationLayout>
+            <AllCuisines />
             <CustomContainer>
                 <CustomStackFullWidth
                     sx={{
@@ -332,6 +333,7 @@ const Homes = ({ configData }) => {
                 </CustomContainer>
             ) : (
                 <>
+
                     <CustomContainer>
                         <Banner bannerIsLoading={bannerIsLoading} />
                     </CustomContainer>
@@ -339,7 +341,7 @@ const Homes = ({ configData }) => {
                         <FeatureCatagories height="70px" />
                         {/* Services Section */}
                         <CustomContainer>
-                            <AllCuisines />
+                            {/*<AllCuisines />*/}
                             {/*<VisitAgain />*/}
                             {/*<AddsSection*/}
                             {/*    data={addStores}*/}
