@@ -336,12 +336,14 @@ const Homes = ({ configData }) => {
                     </CustomContainer>
                     <Box>
                         <FeatureCatagories height="70px" />
+                        {/* Services Section */}
+                        <Cuisines />
                         <CustomContainer>
-                            <VisitAgain />
-                            <AddsSection
+                            {/* <VisitAgain /> */}
+                            {/* <AddsSection
                                 data={addStores}
                                 isLoading={addIsLoading}
-                            />
+                            /> */}
                             {configData?.dine_in_order_option === 1 ? (
                                 <DineIn />
                             ) : null}
@@ -355,8 +357,8 @@ const Homes = ({ configData }) => {
                                 isLoadingNearByPopularRestaurantData
                             }
                         />
-                        <NewRestaurant />
-                        {/*{global && <Cuisines />}*/}
+                        {/* <NewRestaurant /> */}
+                        {/* {global && <Cuisines />} */}
 
                         {global?.banner_data?.promotional_banner_image && (
                             <PromotionalBanner global={global} />
